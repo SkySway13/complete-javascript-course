@@ -15,7 +15,7 @@ console.log(job);
 
  */
 
-var firstName = 'John';
+/* var firstName = 'John';
 var age = 28;
 console.log(firstName + ' ' + age);
 
@@ -38,12 +38,12 @@ console.log(firstName + ' is a ' + age + ' years old '
     + job + '. Is he married? ' + ms);
 
 age = 'Zero';
-job = 'Who knows';
+job = 'Who knows'; */
 
 /* var lastName = prompt('Test');
 console.log(lastName); */
 
-
+/* 
 var currentYear = 2020;
 var birthYear = currentYear - 28;
 console.log(birthYear);
@@ -75,4 +75,21 @@ x1 = y1 =  (3 + 5) * 4 - 6;
 x1 += 10;
 x1 *= 2;
 x1++;
-console.log(x1);
+console.log(x1); */
+
+// CC1
+
+var m1, m2, h1, h2, bmi1, bmi2;
+
+m1 = prompt('P1`s weight(in kg)');
+h1 = prompt('P1`s height(in meter)');
+
+m2 = prompt('P2`s Weight(in kg)');
+h2 = prompt('P2`s height(in meter)');
+
+bmi1 = m1/(h1 *= h1);
+bmi2 = m2/(m2 *= h2);
+
+var result = bmi1 > bmi2;
+console.log(bmi1 + ' , ' + bmi2);
+console.log('Is P1`s BMI higher than P2`s ?' + result);
