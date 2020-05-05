@@ -34,14 +34,14 @@ function CheckMarrigeStatus() {
 
 CheckMarrigeStatus();
 
-alert(firstName + ' is a ' + age + ' years old '
+console.log(firstName + ' is a ' + age + ' years old '
     + job + '. Is he married? ' + ms);
 
 age = 'Zero';
 job = 'Who knows';
 
-var lastName = prompt('Test');
-console.log(lastName);
+/* var lastName = prompt('Test');
+console.log(lastName); */
 
 
 var currentYear = 2020;
@@ -61,3 +61,18 @@ console.log(typeof 'test')
 var x;
 console.log(typeof x);
 
+var adultAge = 18;
+
+var isAdult = currentYear = birthYear >= adultAge;
+console.log(isAdult);
+
+var avg = (a + b) / 2;
+console.log(avg);
+
+var x1, y1;
+x1 = y1 =  (3 + 5) * 4 - 6;
+
+x1 += 10;
+x1 *= 2;
+x1++;
+console.log(x1);
