@@ -88,7 +88,7 @@ m2 = prompt('P2`s Weight(in kg)');
 h2 = prompt('P2`s height(in meter)');
 
 bmi1 = m1/(h1 *= h1);
-bmi2 = m2/(m2 *= h2);
+bmi2 = m2/(h2 *= h2);
 
 var result = bmi1 > bmi2;
 console.log(bmi1 + ' , ' + bmi2);
