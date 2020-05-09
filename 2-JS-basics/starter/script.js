@@ -119,7 +119,9 @@ var age = 26;
 var adult = age > 18 ? 'adult' : 'not adult';
 console.log(adult); */
 
-/* switch (true) {
+var age = 16;
+var testbool = true
+switch (testbool) {
     case age >= 18:
         console.log('adult');
         break;
@@ -130,9 +132,10 @@ console.log(adult); */
     default:
         console.log('unknown');
         break;
-} */
+}
 
-//switch
+//switch - looking for a match,excute matched case`s followed code, if there is no match, excute default
+//key can be any value/variable, no error will be reported by IDE. It is simply a ref for match.
 /* switch (key[can be boolean]) {
     case value:
         
