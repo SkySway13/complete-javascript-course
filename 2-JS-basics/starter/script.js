@@ -79,7 +79,7 @@ console.log(x1); */
 
 // CC1
 
-var m1, m2, h1, h2, bmi1, bmi2;
+/* var m1, m2, h1, h2, bmi1, bmi2;
 
 m1 = prompt('P1`s weight(in kg)');
 h1 = prompt('P1`s height(in meter)');
@@ -92,4 +92,66 @@ bmi2 = m2/(h2 *= h2);
 
 var result = bmi1 > bmi2;
 console.log(bmi1 + ' , ' + bmi2);
-console.log('Is P1`s BMI higher than P2`s ?' + result);
+console.log('Is P1`s BMI higher than P2`s ? ' + result); */
+
+/* var age = 16;
+
+if (age < 13) {
+    console.log('1');
+}
+else if (age >= 13 && age < 18) {
+    console.log('2');
+}
+else {
+    console.log('3');
+}
+ */
+
+//ternary/conditional operator
+
+/* var firstName = 'John';
+var age = 26;
+ */
+// condition ? <if(){}> : <else(){}>
+/* age >= 18 ? console.log(firstName + ' is an adult')
+    : console.log(firstName + ' is not yet an adult');
+
+var adult = age > 18 ? 'adult' : 'not adult';
+console.log(adult); */
+
+/* switch (true) {
+    case age >= 18:
+        console.log('adult');
+        break;
+    case age < 18:
+        console.log('not adult')
+        break;
+
+    default:
+        console.log('unknown');
+        break;
+} */
+
+//switch
+/* switch (key[can be boolean]) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+} */
+/* var licenseClass = 'c1'
+switch (licenseClass) {
+    case 'c1':
+    case 'c2':
+        console.log('c1');
+        break;
+    case 'a2':
+        console.log('a2');
+        break;
+    default:
+        console.log('undefined');
+}
+
+ */
