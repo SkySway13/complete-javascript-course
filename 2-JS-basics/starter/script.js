@@ -119,7 +119,7 @@ var age = 26;
 var adult = age > 18 ? 'adult' : 'not adult';
 console.log(adult); */
 
-var age = 16;
+/* var age = 16;
 var testbool = true
 switch (testbool) {
     case age >= 18:
@@ -132,7 +132,7 @@ switch (testbool) {
     default:
         console.log('unknown');
         break;
-}
+} */
 
 //switch - looking for a match,excute matched case`s followed code, if there is no match, excute default
 //key can be any value/variable, no error will be reported by IDE. It is simply a ref for match.
@@ -158,3 +158,31 @@ switch (licenseClass) {
 }
 
  */
+
+ // falsy values: undefined, null, 0, '', NaN - Considered false
+ // truthy values: NOT FALSY - Considered true
+
+ //== & === - == does type coercion, === has to be a strict match(date types)
+
+
+ // CC2-2
+
+var t1s,t2s,t3s;
+t1s = (100+100+100)/3;
+t2s = (100+100+100)/3;
+t3s = (100+100+100)/3
+console.log(t1s + ', ' + t2s + ', ' + t3s);
+switch (true) {
+    case t1s > t2s && t1s > t3s:
+        console.log('T1 wins');
+        break;
+    case t1s === t2s && t1s === t3s:
+        console.log('draw');
+        break;
+    case t2s > t1s && t2s > t3s:
+        console.log('T2 wins');
+        break;
+    case t3s > t1s && t3s > t2s:
+        console.log('T3 wins');
+        break;
+}
