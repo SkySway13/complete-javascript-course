@@ -43,7 +43,7 @@ job = 'Who knows'; */
 /* var lastName = prompt('Test');
 console.log(lastName); */
 
-/* 
+/*
 var currentYear = 2020;
 var birthYear = currentYear - 28;
 console.log(birthYear);
@@ -112,7 +112,7 @@ else {
 /* var firstName = 'John';
 var age = 26;
  */
-// condition ? <if(){}> : <else(){}>
+// condition ? <if(condition){}> : <else{}>
 /* age >= 18 ? console.log(firstName + ' is an adult')
     : console.log(firstName + ' is not yet an adult');
 
@@ -138,7 +138,7 @@ switch (testbool) {
 //key can be any value/variable, no error will be reported by IDE. It is simply a ref for match.
 /* switch (key[can be boolean]) {
     case value:
-        
+
         break;
 
     default:
@@ -167,7 +167,7 @@ switch (licenseClass) {
 
  // CC2-2
 
-var t1s,t2s,t3s;
+/* var t1s,t2s,t3s;
 t1s = (100+100+100)/3;
 t2s = (100+100+100)/3;
 t3s = (100+100+100)/3
@@ -185,4 +185,57 @@ switch (true) {
     case t3s > t1s && t3s > t2s:
         console.log('T3 wins');
         break;
+} */
+/*
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
 }
+
+var i = calculateAge(1998);
+console.log(i);
+ */
+
+//function expression - Anything come up with a result is an expression
+//statements - perform actions, no instant result produced.
+/*  var Occupation = function(a) {
+     switch (a) {
+         case '1':
+             return 1;
+         case '2':
+             return 2;
+         case '3':
+             return 3;
+         default:
+             return 'undefined';
+     }
+}
+
+console.log(Occupation('1'));
+console.log(Occupation('2'));
+console.log(Occupation('3')); */
+
+//Arrays
+var names = ['a', 'b', 'c'];
+var years = new Array(1990, 1998, 2020);
+
+console.log(names[0]);
+console.log(names.length);
+
+names[1] = 'i';
+names[names.length] = 'x';
+console.log(names);
+
+//Different data types
+var t = new Array('a',1,'b')
+console.log(t);
+
+t.push('test');
+
+t.unshift('title');
+
+t.pop();
+
+console.log(t.indexOf('title'));
+
+var exist = t.indexOf(1) === 2 ? 'Exist' : 'Not exist';
+console.log(exist);
