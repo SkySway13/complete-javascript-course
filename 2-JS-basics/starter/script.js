@@ -159,13 +159,13 @@ switch (licenseClass) {
 
  */
 
- // falsy values: undefined, null, 0, '', NaN - Considered false
- // truthy values: NOT FALSY - Considered true
+// falsy values: undefined, null, 0, '', NaN - Considered false
+// truthy values: NOT FALSY - Considered true
 
- //== & === - == does type coercion, === has to be a strict match(date types)
+//== & === - == does type coercion, === has to be a strict match(date types)
 
 
- // CC2-2
+// CC2-2
 
 /* var t1s,t2s,t3s;
 t1s = (100+100+100)/3;
@@ -215,7 +215,7 @@ console.log(Occupation('2'));
 console.log(Occupation('3')); */
 
 //Arrays
-var names = ['a', 'b', 'c'];
+/* var names = ['a', 'b', 'c'];
 var years = new Array(1990, 1998, 2020);
 
 console.log(names[0]);
@@ -235,7 +235,48 @@ t.unshift('title');
 
 t.pop();
 
+console.log(t);
+
 console.log(t.indexOf('title'));
 
 var exist = t.indexOf(1) === 2 ? 'Exist' : 'Not exist';
-console.log(exist);
+console.log(exist); */
+
+//S2 - CC3
+
+var invA, invB, invC;
+invA = 124;
+invB = 48;
+invC = 268;
+
+function tipCalculator(amount) {
+    switch (true) {
+        case amount <= 50:
+            return amount * 0.2;
+        case amount > 50 && amount <= 200:
+            return amount * 0.15;
+        case amount > 200:
+            return amount * 0.1;
+        default:
+            return 'Check amount';
+    }
+}
+
+function tipCalculatorIfElse(amount) {
+    if (amount <= 50) {
+        return amount * 0.2;
+    } else if (50 < amount <= 200) {
+        return amount * 0.15;
+    } else if (amount > 200) {
+        return amount * 0.1;
+    } else {
+        return 'Check Amount'
+    }
+}
+
+var tipsToPay = [tipCalculator(invA), tipCalculator(invB), tipCalculator(invC)];
+var totalToPay = Array(tipCalculator(invA) + invA, tipCalculator(invB) + invB, tipCalculator(invC) + invC);
+
+console.log(tipsToPay);
+console.log(totalToPay);
+
