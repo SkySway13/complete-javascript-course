@@ -307,7 +307,7 @@ console.log(people);
 var someguy = new Object();
  */
 
-var people = {
+/* var people = {
     name: 'somebody',
     age: 30,
     description: 'some random guy',
@@ -324,4 +324,75 @@ console.log(people.calculateBirthYear());
 people.birthYear = people.calculateBirthYear();
 
 console.log(people);
+ */
 
+//S2 - CC4
+
+/* var m1, h1, m2, h2;
+m1 = prompt('P1`s weight(in kg)');
+h1 = prompt('P1`s height(in meter)');
+
+m2 = prompt('P2`s Weight(in kg)');
+h2 = prompt('P2`s height(in meter)');
+var p1 = {
+    name: 'P1',
+    weight: m1,
+    height: h1,
+    calculateBMI: function () {
+        var bmi = this.weight / (this.height * this.height);
+        this.bmi = bmi;
+        return this.bmi;
+    }
+};
+
+var p2 = {
+    name: 'P2',
+    weight: m2,
+    height: h2,
+    calculateBMI: function () {
+        var bmi = this.weight / (this.height * this.height);
+        this.bmi = bmi;
+        return this.bmi;
+    }
+};
+
+function compareBMIs() {
+    p1.calculateBMI();
+    p2.calculateBMI();
+    console.log(p1.name + '`s BMI: ' + p1.bmi + ' ,' + p2.name + '`s BMI: ' + p2.bmi);
+    switch (true) {
+        case p1.bmi > p2.bmi:
+            console.log(p1.name + ' has higner BMI');
+            break;
+        case p1.bmi < p2.bmi:
+            console.log(p2.name + ' has higner BMI');
+            break;
+        default:
+            console.log(p1.name + ' & ' + p2.name + ' has same BMI');
+            break;
+    }
+}
+
+compareBMIs();
+console.log(p1);
+console.log(p2); */
+
+/* var a = {
+
+}
+
+a.name = 'test';
+console.log(a); */
+
+var p1 = {
+    name: 'P1',
+    weight: m1,
+    height: h1,
+    /* calculateBMI: function () {
+        this.bmi = this.weight / (this.height * this.height);
+        //return this.bmi;
+    } */
+    calculateBMI: function(){
+        return this.weight / (this.height * this.height);
+    }
+};
