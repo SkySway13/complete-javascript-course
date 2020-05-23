@@ -244,7 +244,7 @@ console.log(exist); */
 
 //S2 - CC3
 
-var invA, invB, invC;
+/* var invA, invB, invC;
 invA = 124;
 invB = 48;
 invC = 268;
@@ -259,19 +259,21 @@ function tipCalculator(amount) {
             return amount * 0.1;
         default:
             return 'Check amount';
-    }
+    }   
 }
 
-function tipCalculatorIfElse(amount) {
+function tipCalculatorIfElseRevised(amount) {
+    var per;
     if (amount <= 50) {
-        return amount * 0.2;
+        per = 0.2;
     } else if (50 < amount <= 200) {
-        return amount * 0.15;
+        per = 0.15;
     } else if (amount > 200) {
-        return amount * 0.1;
+        per = 0.1;
     } else {
         return 'Check Amount'
     }
+    return amount * per;
 }
 
 var tipsToPay = [tipCalculator(invA), tipCalculator(invB), tipCalculator(invC)];
@@ -279,4 +281,47 @@ var totalToPay = Array(tipCalculator(invA) + invA, tipCalculator(invB) + invB, t
 
 console.log(tipsToPay);
 console.log(totalToPay);
+ */
+
+/* var people = {
+    name: 'somebody',
+    age: 30,
+    description: 'some random guy',
+    previousJobs: ['Driver','Teacher','Student'],
+    currentJob: 'Salesman',
+    isMarried: false
+}; */
+/* 
+console.log(people);
+console.log(people.name);
+console.log(people['age']);
+
+var a = 'currentJob';
+console.log(people[a]);
+
+people.name = 'Jane Doe';
+people.isMarried = true;
+
+console.log(people);
+
+var someguy = new Object();
+ */
+
+var people = {
+    name: 'somebody',
+    age: 30,
+    description: 'some random guy',
+    previousJobs: ['Driver', 'Teacher', 'Student'],
+    currentJob: 'Salesman',
+    isMarried: false,
+    calculateBirthYear: function () {
+        return 2020 - this.age;
+    }
+};
+
+console.log(people.calculateBirthYear());
+
+people.birthYear = people.calculateBirthYear();
+
+console.log(people);
 
