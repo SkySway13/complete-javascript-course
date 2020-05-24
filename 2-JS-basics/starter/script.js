@@ -518,4 +518,4 @@ if (tipsAvgA > tipsAvgB) {
     console.log('A paid the same as B');
 }
 
-
+//End of S2
