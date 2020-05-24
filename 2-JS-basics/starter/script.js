@@ -519,3 +519,4 @@ if (tipsAvgA > tipsAvgB) {
 }
 
 
+//End of S2 - Next time use git merge --no-ff -m <comment>
