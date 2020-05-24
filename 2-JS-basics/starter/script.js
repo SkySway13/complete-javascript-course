@@ -384,15 +384,138 @@ console.log(p2); */
 a.name = 'test';
 console.log(a); */
 
-var p1 = {
+/* var p1 = {
     name: 'P1',
     weight: m1,
     height: h1,
-    /* calculateBMI: function () {
-        this.bmi = this.weight / (this.height * this.height);
-        //return this.bmi;
-    } */
     calculateBMI: function(){
         return this.weight / (this.height * this.height);
     }
-};
+}; */
+
+/* for (var i = 0; i < 10; i++) {
+    console.log(i);
+} */
+
+
+/* var names = ['a', 'b', 'c'];
+
+for (var index = 0; index < names.length; index++) {
+    console.log(names[index]);
+} */
+
+/* var i = 0;
+while (i < names.length) {
+    console.log(names[i]);
+    i++;
+} */
+
+//continue & break
+/* var names = ['a', 1, 'b', 'c'];
+console.log(names.length);
+for (var index = 0; index < names.length; index++) {
+    if (typeof names[index] !== 'string') continue;
+    console.log(names[index]);
+}
+
+
+for (var index = 0; index < names.length; index++) {
+    if (typeof names[index] !== 'string') break;
+    console.log(names[index]);
+}
+
+//backwards
+for (var index = names.length - 1; index >= 0; index--) {
+    //if (typeof names[index] !== 'string') continue;
+    console.log(names[index]);
+} */
+
+//S2 - CC5
+var tipCalculatorA = {
+    initialBill: [124, 48, 268, 180, 42],
+    tipsToPay: Array(),
+    totalToPay: [],
+    calculateTips: function () {
+        for (var index = 0; index < this.initialBill.length; index++) {
+            switch (true) {
+                case this.initialBill[index] <= 50:
+                    this.tipsToPay[index] = this.initialBill[index] * 0.2;
+                    this.totalToPay[index] = this.initialBill[index] + this.tipsToPay[index];
+                    break;
+                case this.initialBill[index] > 50 && this.initialBill[index] <= 200:
+                    this.tipsToPay[index] = this.initialBill[index] * 0.15;
+                    this.totalToPay[index] = this.initialBill[index] + this.tipsToPay[index];
+                    break;
+                case this.initialBill[index] > 200:
+                    this.tipsToPay[index] = this.initialBill[index] * 0.1;
+                    this.totalToPay[index] = this.initialBill[index] + this.tipsToPay[index];
+                    break;
+                default:
+                    console.log('Check amount');
+                    break;
+            }
+        }
+        console.log(this.initialBill);
+        console.log(this.tipsToPay);
+        console.log(this.totalToPay);
+    }
+}
+
+var tipCalculatorB = {
+    initialBill: [77, 375, 110, 45],
+    tipsToPay: Array(),
+    totalToPay: [],
+    calculateTips: function () {
+        for (var index = 0; index < this.initialBill.length; index++) {
+            switch (true) {
+                case this.initialBill[index] <= 100:
+                    this.tipsToPay[index] = this.initialBill[index] * 0.2;
+                    this.totalToPay[index] = this.initialBill[index] + this.tipsToPay[index];
+                    break;
+                case this.initialBill[index] > 100 && this.initialBill[index] <= 300:
+                    this.tipsToPay[index] = this.initialBill[index] * 0.1;
+                    this.totalToPay[index] = this.initialBill[index] + this.tipsToPay[index];
+                    break;
+                case this.initialBill[index] > 300:
+                    this.tipsToPay[index] = this.initialBill[index] * 0.25;
+                    this.totalToPay[index] = this.initialBill[index] + this.tipsToPay[index];
+                    break;
+                default:
+                    console.log('Check amount');
+                    break;
+            }
+        }
+        console.log(this.initialBill);
+        console.log(this.tipsToPay);
+        console.log(this.totalToPay);
+    }
+}
+
+tipCalculatorA.calculateTips();
+tipCalculatorB.calculateTips();
+
+function calculateTipsAvg(tips) {
+
+    var sum = 0;
+    if (typeof tips === 'object') {
+        for (var index = 0; index < tips.length; index++) {
+            sum += tips[index];
+        }
+        return sum / tips.length;
+    }
+    else return 'Amounts to calculate not stored in an array';
+}
+
+var tipsAvgA = calculateTipsAvg(tipCalculatorA.tipsToPay);
+var tipsAvgB = calculateTipsAvg(tipCalculatorB.tipsToPay);
+console.log(tipsAvgA, tipsAvgB);
+
+if (tipsAvgA > tipsAvgB) {
+    console.log('A paid more');
+} else if (tipsAvgB > tipsAvgA) {
+    console.log('B paid more');
+} else {
+    console.log('A paid the same as B');
+}
+
+
