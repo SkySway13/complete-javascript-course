@@ -283,6 +283,8 @@ console.log(tipsToPay);
 console.log(totalToPay);
  */
 
+//method is a function that wrapped inside an object
+
 /* var people = {
     name: 'somebody',
     age: 30,
@@ -518,4 +520,5 @@ if (tipsAvgA > tipsAvgB) {
     console.log('A paid the same as B');
 }
 
-//End of S2
+
+//End of S2 - From now on use git merge --no-ff -m "<comment>" <branch>
